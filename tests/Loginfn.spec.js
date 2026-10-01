@@ -8,7 +8,7 @@ test.describe('Login Functionality module',() => {
 
 
 
-    test('Login with valida credentials',async ({page})=>
+    test('Login with valid credentials',async ({page})=>
     {
         await page.getByTestId('input-email').fill('admin@insureflow.com');
         await page.getByTestId('input-password').fill('password123');

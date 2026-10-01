@@ -29,3 +29,12 @@ await page.close();
 
 }
 )
+
+test('pagetitleassertion',async ({page}) =>
+{
+    await page.goto('https://google.com');
+    //const title = await page.title();
+    await expect (page).toHaveTitle('Google');
+
+}
+)
